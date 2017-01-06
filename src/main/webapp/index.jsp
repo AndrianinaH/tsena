@@ -1,5 +1,6 @@
+<%@ page import="service.*" %>
 <html>
     <body>
-        <h2>Hello Heroku!</h2>
+        <h2><%= Test34.hello34() %></h2>
     </body>
 </html>
