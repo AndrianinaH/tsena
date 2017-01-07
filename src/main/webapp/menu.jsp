@@ -1,9 +1,21 @@
-<%@page import="service.*" %>%>
+<%@page import="service.*" %>
 <%@page import="java.sql.*" %>
 <%@page import="java.util.*" %>
 <%@page import="javax.servlet.http.HttpSession"%>
 <%@page import="java.text.SimpleDateFormat" %>
-
+<%
+	HttpSession panierSession = request.getSession();
+	ArrayList<Panier> allPanier=new ArrayList<Panier>();
+	int nbrAchat;
+	
+	if(panierSession.getAttribute("panier")!=null)
+	{
+		allPanier=(ArrayList<Panier>)panierSession.getAttribute("panier");
+		nbrAchat=allPanier.size();
+	}
+	else
+		nbrAchat=allPanier.size();
+%>
 <!doctype html>
 <html>
   <head>
@@ -31,7 +43,7 @@
     <div class="ui right menu">
      <a class="item" id="login" href="panier.jsp">
         <strong>Panier</strong>
-        <div class="ui red left pointing label">0</div>
+        <div class="ui red left pointing label"><%=nbrAchat %></div>
      </a>
       <div class="ui dropdown item" id="login">
       	  <strong id="user_admin">Admin</strong><i class="icon chevron down  large"></i>
