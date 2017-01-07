@@ -7,8 +7,7 @@ import java.sql.SQLException;
 
 public class UtilDB {
 	
-	@SuppressWarnings("unused")
-	private static Connection getConnection() throws URISyntaxException, SQLException {
+	public static Connection getConnection() throws URISyntaxException, SQLException {
 	    String dbUrl = System.getenv("JDBC_DATABASE_URL");
 	    return DriverManager.getConnection(dbUrl);
 	}
