@@ -8,7 +8,7 @@
 	try
 	{
 		db = new ConnectDB();
-		Connection connection = db.getConn("Postgres");
+		Connection connection = db.getConn();
 		panierService = new PanierService(connection);
 		facture=panierService.getLastFacture();
 	}catch(Exception e){
