@@ -31,6 +31,7 @@
                      <th ng-click="orderByMe('quantiteMax')">quantite max <i class="sort icon"></i></th>
                      <th ng-click="orderByMe('montant')">prix <i class="sort icon"></i></th>
                      <th>modifier/supprimer</th>
+			 <th>hahahahha</th>
                  </tr>
              </thead>
              <tbody>
