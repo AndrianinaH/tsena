@@ -1,4 +1,5 @@
 <%@include file="menu.jsp" %>
+/*-------*/
 <script type="text/javascript" src="assets/angular.min.js"></script>
 <div class="pusher">
     <div class="ui container" ng-app="boutiqueApp">
