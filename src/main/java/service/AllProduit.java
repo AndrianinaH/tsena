@@ -9,7 +9,8 @@ public class AllProduit
 	 private String refProduit;
 	 private int quantiteMin;
 	 private int quantiteMax;
- 
+         private int test
+
 	 public AllProduit(){}
    
 	 public AllProduit (int idProduit,String nomRayon, double montant, String nomProduit,String refProduit,int quantiteMin,int quantiteMax) 
